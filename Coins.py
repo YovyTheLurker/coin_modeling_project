@@ -103,7 +103,7 @@ class Ten_Pence(Coin):
 		"mass" : 6.50,
 		}
 
-		super().__init__(**data)      # This is an example of polymorphism.  This is when a method has multiple forms inside a class.
+		super().__init__(**data)      
 		def rust(self):
 			self.color = self.clean_color
 		def clean(self):
@@ -121,7 +121,7 @@ class Twenty_Pence(Coin):
 		"mass" : 5.00,
 		}
 
-		super().__init__(**data)      # This is an example of polymorphism.  This is when a method has multiple forms inside a class.
+		super().__init__(**data)      
 		def rust(self):
 			self.color = self.clean_color
 		def clean(self):
@@ -139,7 +139,7 @@ class Fifty_Pence(Coin):
 		"mass" : 8.00,
 		}
 
-		super().__init__(**data)     # This is an example of polymorphism.  This is when a method has multiple forms inside a class.
+		super().__init__(**data)     
 		def rust(self):
 			self.color = self.clean_color
 		def clean(self):
@@ -174,7 +174,7 @@ class Two_Pound(Coin):
 		"mass" : 12.00,
 		}
 
-		super().__init__(**data)      # This is an example of polymorphism.  This is when a method has multiple forms inside a class.
+		super().__init__(**data)      
 		def rust(self):
 			self.color = self.clean_color
 		def clean(self):
@@ -187,119 +187,3 @@ for coin in coins:
 
 	string = "{} - color: {}, value: {}, diameter(mm): {}, thickness(mm): {}, number of edges: {}, mass(g): {}".format(*arguments)
 	print(string)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# one_pound_coin = Pund()
-# print(one_pound_coin.color)
-
-# one_pound_coin.rust()
-# print(one_pound_coin.color)
-
-
-
-# 	def __init__(self, rare=False):
-		
-# 		self.rare = rare
-
-# 		if self.rare:
-# 			self.value = 1.25
-# 		else:
-# 			self.value = 1.00
-
-# 		self.value = 1.00
-# 		self.color = 'gold'
-# 		self.num_edges = 1
-# 		self.diameter = 22.5 #mm
-# 		self.thickness = 3.15 #mm
-# 		self.heads = True
-
-# 	def __del__(self): 
-# 		print("Coin Spent!")
-
-
-# 	def rust(self):
-# 		self.color = "greenish"
-
-# 	def clean(self):
-# 		self.color = "gold"
-
-# 	def flip(self):
-# 		heads_options = [True, False]
-# 		choice = random.choice(heads_options)
-# 		self.heads = choice
-
-
-# coin1 = Pound()
-# del coin1
-
-# print(coin1)
-# coin1 = Pound()
-
-# print(coin1.heads)
-
-# coin1.flip()
-# print(coin1.heads)
-
-
-# coin1.flip()
-# print(coin1.heads)
-
-# coin1.flip()
-# print(coin1.heads)
-
-
-# coin1.flip()
-# print(coin1.heads)
-
-
-# coin1.flip()
-# print(coin1.heads)
-
-
-# coin1 = Pound()
-# coin2 = Pound()
-
-# print(coin1.color)
-# print(coin2.color)
-
-# coin1.rust()
-
-# print(coin1.color)
-# print(coin2.color)
-
-# coin1.clean()
-
-# print(coin1.color)
-# print(coin2.color)
-
-
-
-
-# coin1 = Pound(rare = True)
-# coin2 = Pound()
-
-# print(coin1.rare)
-# print(coin2.rare)
-
-# print(coin1.value)
-# print(coin2.value)
-
-
-# coin1 = Pound()
-# print(coin1)
-
-# print(coin1.value)
-# print(coin1.color)
